@@ -4,11 +4,11 @@ def q1():
     verifique se ele é par ou ímpar. Imprima uma mensagem informando o 
     resultado.
     """
-    num = int(input("Digite um número: "))
-    if num % 2 == 0:
-        print("O número é par")
+    numero = int(input("Digite um número: "))
+    if numero % 2 == 0:
+        print("O número é Par")
     else:
-        print("O número é ímpar")  
+        print("O número é Ímpar")  
     
 
 
