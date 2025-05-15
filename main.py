@@ -4,7 +4,13 @@ def q1():
     verifique se ele é par ou ímpar. Imprima uma mensagem informando o 
     resultado.
     """
-    pass
+    num = int(input("Digite um número: "))
+    if num % 2 == 0:
+        print("O número é par")
+    else:
+        print("O número é ímpar")  
+    
+
 
 
 def q2():
@@ -14,12 +20,20 @@ def q2():
     Para 'texto', imprima 'to'
 
     """
-    pass
+    import math
+
+    texto = input("Digite um texto: ")
+    tamanho = len(texto)
+    meio = math.ceil(tamanho / 2)
+    print(texto[meio:tamanho])
+
 
 def q3():
     """
     Leia um número da entrada e imprima todos os 10 primeiros múltiplos dele na mesma linha
     """
+
+
     pass
 
 
@@ -60,3 +74,9 @@ def q9():
 
 def q10():
     pass
+
+if __name__ == " __main__ ":
+    q1()
+
+if __name__ == " __main__ ":
+    q2()
