@@ -32,9 +32,14 @@ def q3():
     """
     Leia um número da entrada e imprima todos os 10 primeiros múltiplos dele na mesma linha
     """
+    numero = int(input("Digite um número: "))
 
 
-    pass
+    for i in range(1, 10):
+        print(numero * i)
+
+
+
 
 
 def q4():
@@ -72,8 +77,11 @@ def q5():
         print("Isosceles")
     elif lado1 == lado3 and lado1 != lado2:
         print("Isosceles")
+    elif lado1 == 0 and lado2 == 0 and lado3 == 0:
+        print("Números neutros. Não possui lados ")
     elif lado1 != lado2 and lado3 != lado1:
         print("Escaleno")
+
     
 
 
@@ -81,33 +89,58 @@ def q6():
     intervalo = 4
     primeiraDose = 2000
 
-    while intervalo == 1:
-        print(primeiraDose + 1)
-        primeiraDose += 1
-    pass
+    for i in range(1, 4):
+        print(primeiraDose + i * intervalo)
+
 
 
 def q7():
-      numero = int(input("Digite um numero "))  
-while True:
+       
+    SequenciaNum = int(input("Digite um número: "))
 
-    if numero // 1 or numero // numero:
-        print(numero)
-    if numero < 0:
-        print("Numero Negativo")
-        break
-        
+    if SequenciaNum > 1 and SequenciaNum % SequenciaNum == 0:
+        print("É número Primo")
+    else:
+        print("Não é número Primo")
 
 
-    pass
 
 def q8():
+    quantidade = 0
+quantiaDoada = 0
+while True:
+    doar = float(input("Digite a quantia que você quer doar: "))
+    if doar < 0:
+        print(f"{quantiaDoada:.2f}")
+        if quantidade > 0:
+
+            print(f'{quantiaDoada / quantidade:.2f}')
+        break
+    else:
+        quantiaDoada += doar
+        quantidade += 1
     pass
 
 def q9():
+    
     pass
 
 def q10():
+    graus = float(input("Digite a temperatura: "))
+Temperatura = str(input("c, f, k "))
+
+
+if Temperatura == "C":
+    print(graus * 9/5 + 32)
+    print(graus + 273,15 )
+elif Temperatura == "f":
+    print(graus * 5/9)
+    print(graus * 1,8 - 459,67)
+elif Temperatura == "k":
+    print(graus + 273,15 )
+    print(graus *  9/5 + 32)
+else:
+    print("Inválido")
     pass
 
 if __name__ == "__main__":
