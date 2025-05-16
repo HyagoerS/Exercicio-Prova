@@ -46,7 +46,11 @@ def q4():
      - romulo junior - Romulo Junior
      - ze da manga - Ze da Manga
     """
-    pass
+
+    nome = str(input("Digite o seu nome: "))
+    maisculo = nome.capitalize()
+    print(maisculo)
+    
 
 def q5():
     """
@@ -58,12 +62,43 @@ def q5():
         322: isosceles
         234: escaleno
     """
-    pass
+    lado1 = int(input("Digite lado 1: "))
+    lado2 = int(input("Digite lado 2: "))
+    lado3 = int(input("Digite lado 3: "))
+
+    if lado1 == lado2 and lado3 == lado1:
+        print("Equilátero")
+    elif lado1 == lado2 and lado1 != lado3:
+        print("Isosceles")
+    elif lado1 == lado3 and lado1 != lado2:
+        print("Isosceles")
+    elif lado1 != lado2 and lado3 != lado1:
+        print("Escaleno")
+    
+
 
 def q6():
+    intervalo = 4
+    primeiraDose = 2000
+
+    while intervalo == 1:
+        print(primeiraDose + 1)
+        primeiraDose += 1
     pass
 
+
 def q7():
+      numero = int(input("Digite um numero "))  
+while True:
+
+    if numero // 1 or numero // numero:
+        print(numero)
+    if numero < 0:
+        print("Numero Negativo")
+        break
+        
+
+
     pass
 
 def q8():
@@ -75,8 +110,5 @@ def q9():
 def q10():
     pass
 
-if __name__ == " __main__ ":
-    q1()
-
-if __name__ == " __main__ ":
-    q2()
+if __name__ == "__main__":
+    q5()
